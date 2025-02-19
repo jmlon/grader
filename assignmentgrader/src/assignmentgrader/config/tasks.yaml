@@ -1,0 +1,41 @@
+evaluation:
+  description: >
+    Read the following assigment:
+    {assignment}
+
+    Read the corresponding rubric:
+    {rubric}
+
+    Evaluate the the assignment according to the expected learning outcomes 
+    defined in the rubric.
+    This is the submitted solution:
+    {solution}
+
+  expected_output: >
+    A list of the learning outcomes and the corresponding score obtained 
+    for each one. Include also feedback about what was wrong, and how it could be
+    improved.
+    The output should be markdown syntax, do not enclose between ``` ```. Do not provide a corrected solution.
+  async_execution: true
+  agent: grader
+
+
+reviewing:
+  description: >
+    Read the following assigment:
+    {assignment}
+
+    Read the corresponding rubric:
+    {rubric}
+
+    The student's solution:
+    {solution}
+
+    And the grades assigned by the grader.
+  expected_output: >
+    For each learning outcomes, add a comment called "verification" stating if the grade and the feedback
+    are accurate or if they need to be changed.
+    The output should be markdown syntax, do not enclose between ``` ```. Do not provide a corrected solution.
+  agent: checker
+  context:
+    - evaluation
