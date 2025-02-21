@@ -1,0 +1,12 @@
+rubric_task:
+  description: >
+    Read the following description of the assignment
+
+    {exercise}
+
+    The expected learning outcomes should be inferred from this description.
+  expected_output: >
+    A rubric with a grading scale from 1 to 5 (1=Unsatisfactory, 2=Needs Improvement, 3=Meets Expectations, 4=Exceeds Expectations, 5=Excellent) for each one of the expected learning outcomes of the exercise.
+    The rubric should be formatted as a Markdown table with the following columns: "Learning Outcome", "1", "2", "3", "4", "5".
+    Include a heading line indicating the name of the assignment.
+  agent: rubric_writer

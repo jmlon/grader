@@ -41,8 +41,8 @@ class Assignmentgrader():
 		"""Creates the Assignmentgrader crew"""
 
 		return Crew(
-			agents=self.agents, # Automatically created by the @agent decorator
-			tasks=self.tasks, # Automatically created by the @task decorator
+			agents=self.agents, 
+			tasks=self.tasks,
 			process=Process.sequential,
 			verbose=False,
 			max_rpm=3,

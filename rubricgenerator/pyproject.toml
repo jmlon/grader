@@ -1,0 +1,23 @@
+[project]
+name = "rubricgenerator"
+version = "0.1.0"
+description = "rubricgenerator using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0"
+]
+
+[project.scripts]
+rubricgenerator = "rubricgenerator.main:run"
+run_crew = "rubricgenerator.main:run"
+train = "rubricgenerator.main:train"
+replay = "rubricgenerator.main:replay"
+test = "rubricgenerator.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
