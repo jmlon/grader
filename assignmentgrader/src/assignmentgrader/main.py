@@ -7,10 +7,10 @@ from assignmentgrader.crew import Assignmentgrader
 from crewai.crews.crew_output import CrewOutput
 
 TOPIC = 'Basic Programming Skills'
-ASSIGNMENT = 'assignment/assignment.md'
-RUBRIC = 'assignment/rubric.md'
-SUBMISSIONS_DIR = 'submissions'
-EVALUATIONS_DIR = 'evaluations'
+ASSIGNMENT = 'assignments/assignment2/assignment.md'
+RUBRIC = 'assignments/assignment2/rubric.md'
+SUBMISSIONS_DIR = 'assignments/assignment2/submissions'
+EVALUATIONS_DIR = 'assignments/assignment2/evaluations'
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 

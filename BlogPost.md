@@ -17,6 +17,34 @@ For the evaluation of the system, we used programming assignments and their corr
 
 # Experiments
 
+## Assigment 1
+
+| Large Language Model | As grader | As reviewer | Human assestment of Crew
+| --- | --- | --- | --- |
+| groq/llama-3.3-70b-versatile | In one case the feedback was limited to the rubric's level, in another it provided detailed feedback. Provided a good overall feedback. | Accurate assestment of the assignments | Very good |
+| grok-2-1212 | In both cases it provided accurate feedback for each learning outcome. Provided a good overall feedback. | Accurate assestment of the assignments  | Very good |
+| gpt-4o-mini | Provided very good feedback and suggestions. Provided a good overall feedback. | The verification accuratly reflects the correspondance between the evaluacion and the rubric | Very good |
+| gemini/gemini-2.0-flash-exp | In one case the feedback was limited to the rubric's level. Provided a good overall feedback. | The verification accuratly reflects the correspondance between the evaluacion and the rubric | Very good  |
+
+An additional overall observation is that in most cases, the output of a single LLM varied between assignments, sometimes producing a table and other times producing a text output. A more detailed prompt could help reduce this variability.
+
+
+## Assignment 2
+
+| Large Language Model | As grader | As reviewer | Human assestment of Crew
+| --- | --- | --- | --- |
+| groq/llama-3.3-70b-versatile | Perfectly identified limitations and errors in one submission | The verifier made a good assessment and highlighted the generous score regarding one problem in the submission. For one submission the verifier did not provided detailed explanation of the verification.  | Very good |
+| grok-2-1212 | Identified errors an limitations for one submission. For one of the submissions did not provided detailed feedback. | The verification was accurate with respect to the rubric. | Very good |
+| gpt-4o-mini | Provided accurate feedback for the submissions. | Highlighted the fact that some marks need to be downgraded accurately. | Excellent |
+| gemini/gemini-2.0-flash-exp | Identified errors and limitations in one submission. For the good submission did not provide detailed feedback | Suggested adjusting the mark for a poorly satisfied learning outcome. | Excellent |
+
+In addition, all the models provided a summary of the overall evaluation.
 
 # Results and Discussion
+
+TODO
+- Write and overview of the results
+- Highlight the fact that in all cases the evaluations were good, altought there is variability between the marks assigned by different models.
+- Sometimes the verication agent does provide a revised mark justifying the change in the evaluation.
+- In most cases the grading agent provided detailed feedback, but there were a few cases where it did not. The is also a case where the reviewer did not provide a detailed review. This highlights high variability in the outputs of even the same model with the same prompts, for different invocations.
 
