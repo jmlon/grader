@@ -42,9 +42,11 @@ In addition, all the models provided a summary of the overall evaluation.
 
 # Results and Discussion
 
-TODO
-- Write and overview of the results
-- Highlight the fact that in all cases the evaluations were good, altought there is variability between the marks assigned by different models.
-- Sometimes the verication agent does provide a revised mark justifying the change in the evaluation.
-- In most cases the grading agent provided detailed feedback, but there were a few cases where it did not. The is also a case where the reviewer did not provide a detailed review. This highlights high variability in the outputs of even the same model with the same prompts, for different invocations.
+The experiments demonstrate the potential of AI-assisted grading using the CrewAI framework. Overall, the evaluations produced by the AI agents were of high quality, providing valuable feedback to students. However, there was some variability in the marks assigned by different models, highlighting the need for careful selection and configuration of LLMs for specific grading tasks.
+
+One notable observation is the effectiveness of the verification agent in identifying and correcting inconsistencies in the initial evaluations. In several instances, the verification agent proposed revised marks with clear justifications, demonstrating its ability to ensure fairness and accuracy in the grading process.
+
+While the grading agents generally provided detailed and constructive feedback, there were a few cases where the feedback was limited or lacked specific details. Similarly, there was one instance where the reviewer's assessment was not as comprehensive as expected. These instances underscore the inherent variability in LLM outputs, even when using the same models and prompts across different assignments. This variability suggests that further refinement of prompts and agent configurations may be necessary to improve the consistency and reliability of the AI-assisted grading system.
+
+In summary, our results indicate that CrewAI can be a valuable tool for automating and enhancing the grading process. The multi-agent architecture allows for the decomposition of the grading task into smaller, more manageable sub-tasks, enabling the use of specialized LLMs and targeted prompts. However, it is important to acknowledge the variability in LLM outputs and to continuously monitor and refine the system to ensure consistent and accurate evaluations. Future research should focus on developing more robust prompts, exploring different agent configurations, and incorporating mechanisms for detecting and mitigating potential biases in LLM-generated feedback.
 
